@@ -14,7 +14,7 @@ export class UserService{
     }
     async FindByID(id : ObjectID) : Promise<User>{
        // return this.UserRepository.findOne({ where : { _id : id} }    )
-      return  this.UserRepository.findOneByOrFail({ _id : id})
+      return  this.UserRepository.findOneByOrFail({ id : id})
        // return this.UserRepository.findByOne({_id : id})
     }
     Hello(){
